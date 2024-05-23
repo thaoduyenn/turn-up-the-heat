@@ -65,7 +65,7 @@ function setup() {
 	fire = new Sprite();
 	fire.layer = 2;
 	fire.width = innerWidth / 2;
-	fire.height = 100;
+	fire.height = 50;
 	fire.x = innerWidth - fire.width / 2;
 	fire.y = innerHeight - fire.height / 2;
 	fire.addAni(loadAni("assets/fire/000.png", 7));
@@ -121,6 +121,19 @@ function draw() {
 	//image updates
 	ceo.image = heads[company.value];
 	ceo.image.scale = 0.8;
+
+	//debug
+	fire.debug = true;
+
+	//fire scaling
+	let fireoffset = map(
+		countries_table.getNum(country.value, "temp"),
+		33,
+		54,
+		100,
+		-85
+	);
+	fire.ani.offset.y = fireoffset;
 }
 
 function windowResized() {
