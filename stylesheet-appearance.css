@@ -1,0 +1,48 @@
+:root {
+	--bg-color: #000000;
+	--text-color: #ffffff;
+	--em-color: #e83d13;
+}
+
+body {
+	background-color: var(--bg-color);
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 1) 40%,
+		rgba(73, 2, 0, 1) 100%
+	);
+	color: var(--text-color);
+}
+
+h1 {
+	font-size: 6em;
+	font-family: "VT323", Courier, monospace;
+}
+
+p,
+span {
+	font-size: 18pt;
+	font-family: "Barlow Condensed", Arial, sans-serif;
+}
+
+#info h2 {
+	font-size: 24pt;
+	font-family: "Barlow Condensed", Arial, sans-serif;
+}
+
+#companytext,
+#temptext,
+#difftext,
+#profittext,
+#ceotext {
+	color: var(--em-color);
+}
+
+a {
+	color: var(--em-color);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--text-color);
+}

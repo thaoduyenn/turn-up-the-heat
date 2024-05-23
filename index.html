@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>TURN UP THE HEAT</title>
+	<link rel="stylesheet" href="/../stylesheet-appearance.css" />
+	<link rel="stylesheet" href="/../stylesheet-layout.css" />
+	<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap"
+		rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/p5@1/lib/p5.min.js"></script>
+	<script src="https://p5play.org/v3/planck.min.js"></script>
+	<script src="https://p5play.org/v3/p5play.js"></script>
+
+	<script src="scripts.js"></script>
+</head>
+
+<body>
+	<!--suppress intro-->
+	<div id="p5play-intro"></div>
+	<div id="mainbody">
+		<h1>TURN UP THE HEAT</h1>
+		<!-- to add: about section (info about this website + data sources)-->
+		<p><a href="https://www.reuters.com/sustainability/climate-energy/majority-recent-co2-emissions-linked-just-57-producers-report-says-2024-04-04/"
+				rel="_blank">57 COMPANIES ARE LINKED TO 80% OF GLOBAL CARBON EMISSIONS.</a>
+			AT THIS POINT, PERSONAL RESPONSIBILITY CAN ONLY GO SO FAR. WE NEED TO HOLD THESE CORPORATIONS AND THEIR CEOS
+			ACCOUNTABLE.
+		</p>
+		<br>
+		<p>CLIMATE JUSTICE NOW!</p>
+		<br>
+		<div id="info">
+			<h2 class="inline">Temperatures in </h2>
+			<h2 class="inline" id="countrytext">[COUNTRY]</h2>
+			<h2 class="inline">reached </h2>
+			<h2 class="inline" id="temptext">[TEMP]</h2>
+			<h2 class="inline">in 2023, which means its average annual temperature in 2023 is</h2>
+			<h2 class="inline" id="difftext">[DIFF] higher</h2>
+			<h2 class="inline">than it was in 1950.</h2>
+			<br>
+			<h2 class="inline">Meanwhile,</h2>
+			<h2 class="inline" id="companytext">[COMPANY]</h2>
+			<h2 class="inline">made</h2>
+			<h2 class="inline" id="profittext">$[AMOUNT]</h2>
+			<h2 class="inline">USD in profit that year.</h2>
+			<br>
+			<h2 class="inline" id="ceotext">Turn up the heat on [CEO]!</h2>
+		</div>
+
+		<span id="sources"><a href="">SOURCES</a></span>
+	</div>
+	<div id="home-canvas"></div>
+</body>
+
+</html>
