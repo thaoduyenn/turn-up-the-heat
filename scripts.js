@@ -122,9 +122,6 @@ function draw() {
 	ceo.image = heads[company.value];
 	ceo.image.scale = 0.8;
 
-	//debug
-	fire.debug = true;
-
 	//fire scaling
 	let fireoffset = map(
 		countries_table.getNum(country.value, "temp"),
