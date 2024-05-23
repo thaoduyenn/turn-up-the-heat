@@ -20,6 +20,7 @@ h1 {
 }
 
 p,
+li,
 span {
 	font-size: 18pt;
 	font-family: "Barlow Condensed", Arial, sans-serif;
@@ -45,4 +46,12 @@ a {
 
 a:hover {
 	color: var(--text-color);
+}
+
+li a {
+	color: var(--text-color);
+}
+
+li a:hover {
+	color: var(--em-color);
 }
